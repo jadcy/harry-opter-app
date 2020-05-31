@@ -6,13 +6,13 @@ export default function App() {
     <View style={styles.container}>
       <Text>hello</Text>
       <Button
-  onPress={() => {
-    alert('hello judy');
-  }}
-  title="Press Me"
-/>
+        onPress={() => {
+          alert('hello judy');
+        }}
+        title="Press Me"
+      />
     </View>
-    
+
   );
 }
 
