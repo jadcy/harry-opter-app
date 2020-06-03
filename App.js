@@ -12,6 +12,7 @@ export default class App extends Component {
   render(){
     return (
     <View style={styles.container}>
+      <TextInput returnKeyType='go' style={{ height: 40, width: 300, borderColor: 'gray', borderWidth: 1 }}/>
       <Text>{this.state.House}</Text>
       <Button
         loading={this.state.buttonLoading}
@@ -37,7 +38,6 @@ export default class App extends Component {
               });
           }}
       ></Button>
-      <TextInput style={{ height: 40, borderColor: 'gray', borderWidth: 1 }}/>
     </View>
 
   );
