@@ -12,8 +12,10 @@ export default class App extends Component {
   render(){
     return (
     <View style={styles.container}>
-      <TextInput returnKeyType='go' style={{ height: 40, width: 300, borderColor: 'gray', borderWidth: 1 }}/>
-      <Text>{this.state.House}</Text>
+      <TextInput style={{ height: 40, width: 300, borderColor: 'gray', borderWidth: 1 }}
+        returnKeyType='go'
+        placeholder='name'
+      />
       <Button
         loading={this.state.buttonLoading}
         title={this.state.buttonText}
@@ -38,6 +40,7 @@ export default class App extends Component {
               });
           }}
       ></Button>
+      <Text>{this.state.House}</Text>
     </View>
 
   );
